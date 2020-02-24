@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © Zemez, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+$id = uniqid('newsletter-'); ?>
+
+<div class="newsletter-popup" id="custom-model-popup" data-mage-init='{"customPopup":{"timeout": "10000"}}'>
+    <div class="newsletter-content">
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('test_banner')->toHtml()?>
+        <form class="form subscribe"
+              novalidate
+              action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+              method="post"
+              data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+              id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <div class="control">
+                    <input name="email" type="email" id="<?php echo $id ?>"
+                           placeholder="<?= $block->escapeHtml(__('Email')) ?>"
+                           data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary"
+                        title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
+                        type="submit"
+                        aria-label="Subscribe">
+                    <span><?= $block->escapeHtml(__('Sign Up for Our Newsletter')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+//
+//  Colors
+//  ---------------------------------------------
+
+@color-white: #fff;
+@color-black: #000;
+@color-dark: #1d1d1d;
+@color-light: #c4c4c1;
+@color-lightest: #f0f0f0;
+@color-primary: #000080;
+@color-secondary: #87ceeb;
+@page__background-color: @color-white;
+@border-color__base: rgba(113, 193, 244, 0.2);
+@default-box-shadow: 0px 0px 30px rgba(113, 193, 244, 0.3);
+
+//
+//  Typography
+//  ---------------------------------------------
+@font-size__base: 14px;
+@line-height__base: 1.57;
+@font-weight__base: false; // 400
+
+//  Headings
+@heading__font-weight__base: @font-weight__bold;
+@heading__line-height__base: 1.1;
+@heading__color__base: @color-dark;
+
+@h1__font-size: ceil((@font-size__base * 1.85)); // 26px
+@h1__font-size-desktop: ceil((@font-size__base * 5.15)); // 72px
+@h1__font-color: @heading__color__base;
+@h1__font-weight: @heading__font-weight__base;
+@h1__line-height: @heading__line-height__base;
+
+@h2__font-size: ceil((@font-size__base * 1.72)); // 24px
+@h2__font-size-desktop: ceil((@font-size__base * 3.71)); // 52px
+@h2__font-color: @heading__color__base;
+@h2__font-weight: @heading__font-weight__base;
+@h2__line-height: @heading__line-height__base;
+
+@h3__font-size: ceil((@font-size__base * 1.57)); // 22px
+@h3__font-size-desktop: ceil((@font-size__base * 2.85)); // 40px
+@h3__font-color: @heading__color__base;
+@h3__font-weight: @heading__font-weight__base;
+@h3__line-height: @heading__line-height__base;
+
+@h4__font-size: ceil((@font-size__base * 1.288)); // 18px
+@h4__font-size-desktop: ceil((@font-size__base * 1.86)); // 26px
+@h4__font-color: @heading__color__base;
+@h4__font-weight: 300;
+@h4__line-height: 1.38;
+
+@h5__font-size: ceil((@font-size__base * 1.14)); // 16px
+@h5__font-size-desktop: ceil((@font-size__base * 1.43)); // 20px
+@h5__font-color: @heading__color__base;
+@h5__font-weight: @font-weight__bold;
+@h5__line-height: @heading__line-height__base;
+
+@h6__font-size: @font-size__base * .7; // 14px
+@h6__font-size-desktop: ceil((@font-size__base * 1.14)); // 16px
+@h6__font-color: @heading__color__base;
+@h6__font-weight: @font-weight__bold;
+@h6__line-height: @heading__line-height__base;
+
+///
+//  Buttons
+//  ---------------------------------------------
+
+@button__font-family: @font-family__base;
+@button__font-size: @font-size__base;
+@button__font-weight: @font-weight__bold;
+@button__line-height: @button__font-size + 2;
+@button__padding: 15px;
+
+@button__border-radius: 0;
+
+
+//  Primary button
+@button-primary__background: @color-primary;
+@button-primary__border: 1px solid @color-primary;
+@button-primary__color: @color-white;
+@button-primary__hover__background: @color-black;
+@button-primary__hover__border: 1px solid @color-black;
+@button-primary__hover__color: @color-white;
+@button-primary__active__background: @button-primary__hover__background;
+@button-primary__active__border: @button-primary__hover__border;
+@button-primary__active__color: @button-primary__hover__color;
+@button-primary__line-height: @button__line-height;
+@button-primary__padding: @button__padding 20px;
+
+//
+//  Modals
+//  ---------------------------------------------
+
+@modal-popup__indent-vertical: 10vh;
+@modal-popup__padding: 5rem;
+@modal-popup__width: 50%;
+@modal-popup__z-index: 1000;
+//
+//  Form
+//  ---------------------------------------------
+
+@form-element-input__background: @color-white;
+@form-element-input__border-color: @border-color__base;
+@form-element-input__border: 1px solid @form-element-input__border-color;
+@form-element-input__border-radius: 0;
+@form-element-input__height: 42px;

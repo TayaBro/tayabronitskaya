@@ -1,0 +1,23 @@
+//
+//  Buttons
+//  _____________________________________________
+
+.lib-button() {
+    .lib-css(border-radius, @button__border-radius);
+    text-transform: uppercase;
+}
+
+.lib-button-primary() {
+    text-transform: uppercase;
+}
+
+& when (@media-common = true) {
+    button,
+    .action {
+        height: auto;
+        text-align: center;
+    }
+    .action.default {
+        .lib-button();
+    }
+}
